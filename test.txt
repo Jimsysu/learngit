@@ -1,0 +1,1 @@
+test cmd: git push origin master
