@@ -1,0 +1,408 @@
+「开始」菜单@
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ doc2any.ini
+ Documents/
+ Downloads/
+ Favorites/
+'Foxit Reader SDK ActiveX.ini'
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{2599cde1-271b-11e5-80c6-0026b948c6eb}.TM.blf
+ NTUSER.DAT{2599cde1-271b-11e5-80c6-0026b948c6eb}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{2599cde1-271b-11e5-80c6-0026b948c6eb}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+ Templates@
+ Videos/
+ workspace/
+
+ThinkPad_LONG@ThinkPad MINGW64 ~
+$ pwd
+/c/Users/Think
+
+ThinkPad_LONG@ThinkPad MINGW64 ~
+$ git config --global user.name "lonng"
+
+ThinkPad_LONG@ThinkPad MINGW64 ~
+$ git config --global user.email "lh-happy2008@163.com"
+
+ThinkPad_LONG@ThinkPad MINGW64 ~
+$ pwd
+/c/Users/Think
+
+ThinkPad_LONG@ThinkPad MINGW64 ~
+$ mkdir learngit
+
+ThinkPad_LONG@ThinkPad MINGW64 ~
+$ ls
+ 「开始」菜单@
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ doc2any.ini
+ Documents/
+ Downloads/
+ Favorites/
+'Foxit Reader SDK ActiveX.ini'
+ IntelGraphicsProfiles/
+ learngit/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{2599cde1-271b-11e5-80c6-0026b948c6eb}.TM.blf
+ NTUSER.DAT{2599cde1-271b-11e5-80c6-0026b948c6eb}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{2599cde1-271b-11e5-80c6-0026b948c6eb}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ SendTo@
+ Templates@
+ Videos/
+ workspace/
+
+ThinkPad_LONG@ThinkPad MINGW64 ~
+$ cd learngit/
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit
+$ pwd
+/c/Users/Think/learngit
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit
+$ git init
+Initialized empty Git repository in C:/Users/Think/learngit/.git/
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ ls -ah
+./  ../  .git/
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ ls
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git add readme.txt
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git commit -m "wrote a readme file"
+[master (root-commit) a0a8eda] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git diff
+diff --git a/readme.txt b/readme.txt
+index d8036c1..013b5bc 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,2 +1,2 @@
+-Git is a version control system.
++Git is a distributed version control system.
+ Git is free software.
+\ No newline at end of file
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git add readme.txt
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git commit -m "add distributed"
+[master c481135] add distributed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git log
+commit c48113505c314b1213466387428b12106b127726 (HEAD -> master)
+Author: lonng <lh-happy2008@163.com>
+Date:   Wed Mar 28 16:41:24 2018 +0800
+
+    add distributed
+
+commit a0a8eda47698531023b0e5a55dc07223a425f7d2
+Author: lonng <lh-happy2008@163.com>
+Date:   Wed Mar 28 16:29:01 2018 +0800
+
+    wrote a readme file
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git add readme.txt
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git commit -m "append GPL"
+[master e2b543b] append GPL
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git log
+commit e2b543b1d23081cfe6e27fa7e470d821562c2d61 (HEAD -> master)
+Author: lonng <lh-happy2008@163.com>
+Date:   Wed Mar 28 16:54:17 2018 +0800
+
+    append GPL
+
+commit c48113505c314b1213466387428b12106b127726
+Author: lonng <lh-happy2008@163.com>
+Date:   Wed Mar 28 16:41:24 2018 +0800
+
+    add distributed
+
+commit a0a8eda47698531023b0e5a55dc07223a425f7d2
+Author: lonng <lh-happy2008@163.com>
+Date:   Wed Mar 28 16:29:01 2018 +0800
+
+    wrote a readme file
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git reset --hard HEAD
+HEAD is now at e2b543b append GPL
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git reset --hard HEAD^
+HEAD is now at c481135 add distributed
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software.
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git log
+commit c48113505c314b1213466387428b12106b127726 (HEAD -> master)
+Author: lonng <lh-happy2008@163.com>
+Date:   Wed Mar 28 16:41:24 2018 +0800
+
+    add distributed
+
+commit a0a8eda47698531023b0e5a55dc07223a425f7d2
+Author: lonng <lh-happy2008@163.com>
+Date:   Wed Mar 28 16:29:01 2018 +0800
+
+    wrote a readme file
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git reset --hard e2b543
+HEAD is now at e2b543b append GPL
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git log --pretty=oneline
+e2b543b1d23081cfe6e27fa7e470d821562c2d61 (HEAD -> master) append GPL
+c48113505c314b1213466387428b12106b127726 add distributed
+a0a8eda47698531023b0e5a55dc07223a425f7d2 wrote a readme file
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git reflog
+e2b543b (HEAD -> master) HEAD@{0}: reset: moving to e2b543
+c481135 HEAD@{1}: reset: moving to HEAD^
+e2b543b (HEAD -> master) HEAD@{2}: reset: moving to HEAD
+e2b543b (HEAD -> master) HEAD@{3}: commit: append GPL
+c481135 HEAD@{4}: commit: add distributed
+a0a8eda HEAD@{5}: commit (initial): wrote a readme file
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git gui
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        LICENSE
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git add readme.txt  LICENSE
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   LICENSE
+        modified:   readme.txt
+
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git commit -m "add LICENSE file and understand how stage works"
+[master bbf9e8d] add LICENSE file and understand how stage works
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 LICENSE
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git add readme.txt
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ cat readme.txt
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes of files.
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git commit -m  "git tracks changes"
+[master 1ad5d85] git tracks changes
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git diff HEAD -- readme.txt
+diff --git a/readme.txt b/readme.txt
+index db28b2c..9a8b341 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,4 +1,4 @@
+ Git is a distributed version control system.
+ Git is free software distributed under the GPL.
+ Git has a mutable index called stage.
+-Git tracks changes.
+\ No newline at end of file
++Git tracks changes of files.
+\ No newline at end of file
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ vi readme.txt
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git add readme.xtx
+fatal: pathspec 'readme.xtx' did not match any files
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git add readme.txt
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git commited -m "USing vi edit the file."
+git: 'commited' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git commit -m "USing vi edit the file."
+[master 6407f86] USing vi edit the file.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ThinkPad_LONG@ThinkPad MINGW64 ~/learngit (master)
